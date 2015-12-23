@@ -3,6 +3,7 @@
   "authors": [
     "Erick Ruano <erickaleruano@gmail.com>"
   ],
+  "version": "1.0.0",
   "description": "Angular wrapper for Nicolas Kruchten's Pivot Table.",
   "main": "angular-pivot.js",
   "moduleType": [],
