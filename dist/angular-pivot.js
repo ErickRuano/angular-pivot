@@ -1,22 +1,22 @@
 (function(){
-	var module = angular.module('angularPivot', []);
+    var module = angular.module('angular-pivottable', []);
 
-	module.directive('ngPivot', function(){
-		return {
-	        restrict: 'A',
-	        link: function(scope, element, attrs) {
+    module.directive('ngPivot', function(){
+        return {
+            restrict: 'A',
+            link: function(scope, element, attrs) {
 
                 // Build Pivot
                 var render = function(data, config){
                     if(data !== undefined){
-                        element.pivotUI(data, { rows : "Nombre"});
+                        element.pivotUI(data);
                     }else{
                         throw "Invalid data input on angular-pivot directive :) -"
                     }
                 }
 
                 //Attempt to load google charts
-                if(google) {
+                if(typeof google != 'undefined') {
                     google.load('visualization', '1.0', {
                         packages: ['corechart','charteditor'],
                         callback: function() {
@@ -36,13 +36,13 @@
                     var config = {};
                 }
 
-        		// Data binding
-        		scope.$watch(attrs.ngPivot, function(value){
-					// Reload pivot
-        			render(value, config);
-        		})
+                // Data binding
+                scope.$watch(attrs.ngPivot, function(value){
+                    // Reload pivot
+                    render(value, config);
+                })
 
-	        }
-    	}
-	})
+            }
+        }
+    })
 })();
