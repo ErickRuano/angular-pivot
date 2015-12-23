@@ -1,0 +1,28 @@
+{
+  "name": "angular-pivottable",
+  "authors": [
+    "Erick Ruano <erickaleruano@gmail.com>"
+  ],
+  "description": "Angular wrapper for Nicolas Kruchten's Pivot Table.",
+  "main": "angular-pivot.js",
+  "moduleType": [],
+  "keywords": [
+    "pivot",
+    "pivot-table",
+    "nicolas",
+    "kruchten",
+    "angular-pivot"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ErickRuano/angular-pivot",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pivottable": "*"
+  }
+}
