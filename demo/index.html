@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="pivotDemo">
+	    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Angular PivotUI Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <!--<link rel="stylesheet" href="css/main.css"> -->
+    </head>
+    <body ng-controller="AppController">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div ng-pivot="data" ng-pivot-options="options"></div>
+
+		<link href="../node_modules/pivottable/dist/pivot.min.css" rel="stylesheet" type="text/css" />
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../node_modules/jquery-ui-bundle/jquery-ui.min.js"></script>
+		<script src="../node_modules/pivottable/dist/pivot.min.js"></script>
+		<script src="../node_modules/angular/angular.min.js"></script>
+		<script src="../dist/angular-pivot.js"></script>
+
+		<script>
+			var app = angular.module('pivotDemo', ['angular-pivottable']);
+
+			app.controller('AppController', ['$scope', function($scope){
+
+				$scope.data = [
+			        {color: "blue", shape: "circle"},
+			        {color: "red", shape: "triangle"}
+			    ];
+
+				$scope.options = {
+			        rows: ["color"],
+			        cols: ["shape"]
+			    };
+
+			}]);
+		</script>
+
+    </body>
+</html>

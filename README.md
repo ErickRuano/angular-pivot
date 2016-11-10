@@ -6,12 +6,12 @@ Angular wrapper for Nicolas Kruchten's Pivot Table.
 ## Usage :
 
  - If you use bower, just `bower install angular-pivottable`. If not, download files from the github repo.
+ - If you use npm, just `npm install angular-pivottable`. If not, download files from the github repo.
  - Download also it's dependencies https://github.com/nicolaskruchten/pivottable, jquery & jquery-ui
  - Add `jquery.js`, `jquery-ui.js`, `angular-pivot.js`, `pivot.css`, and `pivot.js` to your code:
 ```html
 <link href="pivot.css" rel="stylesheet" type="text/css" />
 <script src="jquery.js"></script>
-<script src="jquery-ui.js"></script>
 <script src="pivot.js"></script>
 <script src="angular-pivot.js"></script>
 ```
@@ -25,13 +25,12 @@ angular.module('MyApp', ['angular-pivottable']);
 ```html
 <div ng-pivot="data"></div>
 ```
+- You can also add a `ng-pivot-options` attribute to any element with the name of a $scope variable containing the options object to configure the Pivot Table.
+```html
+<div ng-pivot="data" ng-pivot-options="options"></div>
+```
 
 ```js
 $scope.data = [{ name : "Erick", age : "23" }, { name : "Diego", age : "28" }];
+$scope.options = [{ name : "Erick", age : "23" }, { name : "Diego", age : "28" }];
 ```
-
-## Directive options (TO DO):
-`ng-pivot-options` options object with properties:
-  - `rows`: array of strings to preload rows
-  - `cols`: array of strings to preload cols
-  - `renderers`: array of renderers

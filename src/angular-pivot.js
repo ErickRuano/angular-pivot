@@ -1,6 +1,3 @@
-(function(window, undefined) {
-
-var module = angular.module('angular-pivottable', []);
 module.directive('ngPivot', function(){
     return {
         restrict: 'A',
@@ -48,4 +45,3 @@ module.directive('ngPivot', function(){
         }
     }
 });
-}(window));

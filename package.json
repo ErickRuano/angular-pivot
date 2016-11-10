@@ -1,0 +1,35 @@
+{
+  "name": "angular-pivot",
+  "version": "1.2.1",
+  "description": "Angular wrapper for PivotUI JS Library",
+  "main": "dist/ng-pivot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickRuano/angular-pivot.git"
+  },
+  "author": "Erick Ruano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErickRuano/angular-pivot/issues"
+  },
+  "homepage": "https://github.com/ErickRuano/angular-pivot#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-bundle": "^1.11.4",
+    "pivottable": "^2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.14",
+    "gulp-rename": "^1.2.2",
+    "gulp-self-execute": "^1.0.3",
+    "run-sequence": "^1.2.2"
+  }
+}
