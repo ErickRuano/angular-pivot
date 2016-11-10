@@ -31,6 +31,13 @@ angular.module('MyApp', ['angular-pivottable']);
 ```
 
 ```js
-$scope.data = [{ name : "Erick", age : "23" }, { name : "Diego", age : "28" }];
-$scope.options = [{ name : "Erick", age : "23" }, { name : "Diego", age : "28" }];
+$scope.data = [
+    {color: "blue", shape: "circle"},
+    {color: "red", shape: "triangle"}
+];
+
+$scope.options = {
+    rows: ["color"],
+    cols: ["shape"]
+};
 ```
