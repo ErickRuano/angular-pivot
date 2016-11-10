@@ -1,0 +1,23 @@
+{
+  "name": "angular-pivot",
+  "version": "1.2.1",
+  "description": "Angular wrapper for PivotUI JS Library",
+  "main": "dist/angular-pivot.js",
+  "authors": [
+    "Erick Ruano"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ErickRuano/angular-pivot",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery-ui": "^1.12.1",
+    "pivottable": "^2.3.0"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "angular-pivot",
   "version": "1.2.1",
   "description": "Angular wrapper for PivotUI JS Library",
-  "main": "dist/ng-pivot.js",
+  "main": "dist/angular-pivot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +18,6 @@
   "homepage": "https://github.com/ErickRuano/angular-pivot#readme",
   "dependencies": {
     "angular": "^1.5.8",
-    "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.11.4",
     "pivottable": "^2.3.0"
   },
