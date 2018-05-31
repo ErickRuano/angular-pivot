@@ -12,7 +12,7 @@ module.directive('ngPivot', function(){
             var render = function(input){
                 var data = input.data || initialData || [];
                 var options = input.options || initialOptions || {};
-                element.pivotUI(data, options);
+                element.pivotUI(data, options, true);
             };
 
             //Attempt to load google charts
@@ -36,11 +36,11 @@ module.directive('ngPivot', function(){
             scope.$watch(attrs.ngPivot, function(value){
                 // Reload pivot
                 render({ data : value });
-            })
+            }, true)
             scope.$watch(attrs.ngPivotOptions, function(value){
                 // Reload pivot
                 render({ options : value });
-            })
+            }, true)
 
         }
     }
