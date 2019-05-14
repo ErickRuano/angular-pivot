@@ -6,7 +6,7 @@ Angular wrapper for Nicolas Kruchten's Pivot Table.
 ## Usage :
 
  - If you use bower, just `bower install angular-pivottable`. If not, download files from the github repo.
- - If you use npm, just `npm install angular-pivottable`. If not, download files from the github repo.
+ - If you use npm, just `npm i angular-pivot`. If not, download files from the github repo.
  - Download also it's dependencies https://github.com/nicolaskruchten/pivottable, jquery & jquery-ui
  - Add `jquery.js`, `jquery-ui.js`, `angular-pivot.js`, `pivot.css`, and `pivot.js` to your code:
 ```html
